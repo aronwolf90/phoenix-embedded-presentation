@@ -7,6 +7,8 @@
 \usepackage{amsmath, amsfonts}
 \usepackage{hyperref}
 \usepackage{minted}
+\usepackage{hyperref}
+\usepackage{qrcode}
 
 % Title metadata
 \title[Short Title]{Embed a Phoenix page into WordPress}
@@ -28,19 +30,29 @@
 
 \section{Introduction}
 
+\begin{frame}{Links}
+  \begin{itemize}
+    \item \textbf{Repo:}
+      \\
+      \url{https://github.com/aronwolf90/phoenix_embedded}
+      \\
+      \qrcode{https://github.com/aronwolf90/phoenix_embedded}
+      \qquad
+    \item \textbf{Presentation:}
+      \\
+      \url{https://github.com/aronwolf90/phoenix-embedded-presentation/blob/master/main.pdf}
+      \\
+      \qrcode{https://github.com/aronwolf90/phoenix-embedded-presentation/blob/master/main.pdf}
+      \qquad
+  \end{itemize}
+\end{frame}
+
 \begin{frame}{Goal}
   \begin{itemize}
     \item Embed a small html sniped into WP that renders the LiveView page.
   \end{itemize}
   \centering
   \includegraphics[width=1\linewidth]{images/goal.png}
-\end{frame}
-
-\begin{frame}{Links}
-  \begin{itemize}
-    \item https://github.com/aronwolf90/phoenix_embedded.
-    \item Embed a small html sniped into WP that renders the LiveView page.
-  \end{itemize}
 \end{frame}
 
 \begin{frame}{Steps needed to render a LiveView page}
