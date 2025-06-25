@@ -17,3 +17,7 @@ Run the following commands:
     minted
   ```
 * `xelatex main.tex`
+
+## Repo
+
+https://github.com/aronwolf90/phoenix_embedded
