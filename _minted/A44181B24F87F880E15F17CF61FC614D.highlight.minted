@@ -1,0 +1,12 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{// remove current page content}
+\PYG{n+nx}{main}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{querySelectorAll}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}main\PYGZdq{}}\PYG{p}{)}\PYG{p}{[}\PYG{l+m+mf}{0}\PYG{p}{]}
+\PYG{n+nx}{new\PYGZus{}main}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{createElement}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}main\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nx}{main}\PYG{p}{.}\PYG{n+nx}{replaceWith}\PYG{p}{(}\PYG{n+nx}{new\PYGZus{}main}\PYG{p}{)}
+
+\PYG{c+c1}{// load LiveView page}
+\PYG{n+nx}{script}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{document}\PYG{p}{.}\PYG{n+nx}{createElement}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}script\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nx}{script}\PYG{p}{.}\PYG{n+nx}{src}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}http://localhost:4000/assets/widget.js\PYGZdq{}}
+\PYG{n+nx}{script}\PYG{p}{.}\PYG{n+nx}{setAttribute}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}data\PYGZhy{}path\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}/widget/questionnaire\PYGZdq{}}\PYG{p}{)}
+\PYG{n+nx}{new\PYGZus{}main}\PYG{p}{.}\PYG{n+nx}{appendChild}\PYG{p}{(}\PYG{n+nx}{script}\PYG{p}{)}
+\end{MintedVerbatim}
